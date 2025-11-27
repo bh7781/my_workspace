@@ -16,5 +16,46 @@
 # Input: nums = [3,3], target = 6
 # Output: [0,1]
 
-# class Solution:
-#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+from typing import List
+from practise.utils.performance_analyzer import PerformanceAnalyzer
+
+class Solution:
+    @PerformanceAnalyzer.measure
+    def two_sum_bruteforce(self, nums: List[int], target: int) -> List[int]:
+        output_index = []
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if nums[i] + nums[j] == target:
+                   output_index.extend([i, j])
+        return list(set(output_index))
+
+    @PerformanceAnalyzer.measure
+    def two_sum_optimized(self, nums: List[int], target: int) -> List[int]:
+        """
+        Optimized O(n) solution using a hash map.
+        """
+        seen = {}  # value -> index
+        for i, num in enumerate(nums):
+            complement = target - num
+            if complement in seen:
+                return [seen[complement], i]
+            seen[num] = i
+        return []
+
+if __name__ == "__main__":
+    solution = Solution()
+
+    # Example input
+    nums_arr = [2, 7, 11, 15]
+    target_ans = 9
+
+    print("Input nums:", nums_arr)
+    print("Target:", target_ans)
+
+    print("\n---Brute-Force Method")
+    result = solution.two_sum_bruteforce(nums_arr, target_ans)
+    print("Output:", result)
+
+    print("\n---Optimized Method")
+    result = solution.two_sum_bruteforce(nums_arr, target_ans)
+    print("Output:", result)
