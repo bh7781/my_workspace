@@ -24,19 +24,43 @@
 # strs[i] consists of lowercase English letters.
 
 from typing import List
+from collections import defaultdict
 from collections import Counter
 from practise.utils.performance_analyzer import PerformanceAnalyzer
 
 class Solution:
     @PerformanceAnalyzer.measure
-    def group_anagrams(self, strs: List[str]) -> List[List[str]]:
-        anagrams = []
+    def group_anagrams_bf1(self, strs: List[str]) -> List[List[str]]:
+        output = []
+
         for index in range(len(strs)):
+            anagrams = [strs[index]]
             for next_idx in range(index + 1, len(strs[index])):
                 if Counter(strs[index]) == Counter(strs[next_idx]):
-                    anagrams.append([strs[index], strs[next_idx]])
-        return anagrams
+                    anagrams.append(strs[next_idx])
+            output.append(anagrams)
+        return output
+
+    @PerformanceAnalyzer.measure
+    def group_anagrams_opt(self, strs: List[str]) -> List[List[str]]:
+        # key: 26-length tuple of character counts
+        # value: list of strings that share this "signature"
+        groups = defaultdict(list)
+
+        for s in strs:
+            # Count frequency of each character
+            count = [0] * 26
+            for ch in s:
+                count[ord(ch) - ord('a')] += 1
+
+            # Use the tuple of counts as a dictionary key
+            key = tuple(count)
+            groups[key].append(s)
+
+        # Return the grouped anagrams
+        return list(groups.values())
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.group_anagrams(["eat","tea","tan","ate","nat","bat"]))
+    print(solution.group_anagrams_bf1(["eat", "tea", "tan", "ate", "nat", "bat"]))
+    print(solution.group_anagrams_opt(["eat", "tea", "tan", "ate", "nat", "bat"]))
