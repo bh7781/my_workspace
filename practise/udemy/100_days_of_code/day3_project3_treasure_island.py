@@ -1,3 +1,5 @@
+from common.utility import get_valid_input
+
 # https://ascii.co.uk/art/treasure
 
 print(r'''
@@ -25,14 +27,6 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 print("Welcome to Treasure Island")
 print("Your mission is to find the treasure.")
-
-def get_valid_input(prompt, valid_choices=None):
-    while True:
-        player_response = input(prompt)
-        if valid_choices is None or player_response.upper().strip() in valid_choices:
-            return player_response.upper()
-        else:
-            print(f"Invalid response.")
 
 right_left = get_valid_input('Left or Right?: ', ["LEFT", "RIGHT"])
 swim_wait = get_valid_input('Swim or Wait?: ', ["SWIM", "WAIT"])
