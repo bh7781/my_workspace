@@ -24,7 +24,7 @@
 # 1 <= nums[i] <= 1000
 
 from typing import List
-from practise.utils.performance_analyzer import PerformanceAnalyzer
+from utils.performance_analyzer import PerformanceAnalyzer
 
 class Solution:
     @PerformanceAnalyzer.measure

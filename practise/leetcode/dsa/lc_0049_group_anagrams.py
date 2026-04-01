@@ -26,7 +26,7 @@
 from typing import List
 from collections import defaultdict
 from collections import Counter
-from practise.utils.performance_analyzer import PerformanceAnalyzer
+from utils.performance_analyzer import PerformanceAnalyzer
 
 class Solution:
     @PerformanceAnalyzer.measure
