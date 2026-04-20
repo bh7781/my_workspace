@@ -1,5 +1,6 @@
 import string
 import random
+
 from common.utility import get_valid_input
 
 uppercase = list(string.ascii_uppercase)  # ['A', 'B', ..., 'Z']
