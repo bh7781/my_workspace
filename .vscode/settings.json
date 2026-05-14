@@ -1,0 +1,8 @@
+﻿{
+  "python.defaultInterpreterPath": "C:\\PyEnvs\\mwspace\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.env.windows": {
+    "VIRTUAL_ENV": "C:\\PyEnvs\\mwspace",
+    "PATH": "C:\\PyEnvs\\mwspace\\Scripts;${env:PATH}"
+  }
+}
