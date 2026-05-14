@@ -1,8 +1,42 @@
 ﻿{
   "python.defaultInterpreterPath": "C:\\PyEnvs\\mwspace\\Scripts\\python.exe",
+  "jupyter.jupyterServerType": "local",
+  "jupyter.kernels.trusted": [
+    "C:\\Users\\chinm\\AppData\\Roaming\\jupyter\\kernels\\mwspace\\kernel.json"
+  ],
   "python.terminal.activateEnvironment": true,
   "terminal.integrated.env.windows": {
     "VIRTUAL_ENV": "C:\\PyEnvs\\mwspace",
     "PATH": "C:\\PyEnvs\\mwspace\\Scripts;${env:PATH}"
-  }
+  },
+  "terminal.integrated.profiles.windows": {
+    "Command Prompt (mwspace)": {
+      "path": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/K",
+        "C:\\PyEnvs\\mwspace\\Scripts\\activate.bat"
+      ]
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "& 'C:\\PyEnvs\\mwspace\\Scripts\\Activate.ps1'"
+      ]
+    },
+    "PowerShell (mwspace)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:\\PyEnvs\\mwspace\\Scripts\\Activate.ps1"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt (mwspace)"
 }
