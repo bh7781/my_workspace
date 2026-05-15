@@ -1,5 +1,6 @@
 ﻿{
   "python.defaultInterpreterPath": "C:\\PyEnvs\\mwspace\\Scripts\\python.exe",
+  "python.terminal.useEnvFile": true,
   "jupyter.jupyterServerType": "local",
   "jupyter.kernels.trusted": [
     "C:\\Users\\chinm\\AppData\\Roaming\\jupyter\\kernels\\mwspace\\kernel.json"
