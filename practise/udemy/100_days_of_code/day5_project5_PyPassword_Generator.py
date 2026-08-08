@@ -8,7 +8,6 @@ lowercase = list(string.ascii_lowercase)  # ['a', 'b', ..., 'z']
 digits = list(string.digits)              # ['0', '1', ..., '9']
 symbols = list(string.punctuation)        # ['!', '"', '#', '$', ...]
 
-
 nr_uppercase = get_valid_input("How many uppercase letters you like in your password? (Minimum: 1 or Maximum: 2)\n",
                                valid_choices=range(1, 3),
                                cast_type=int)
