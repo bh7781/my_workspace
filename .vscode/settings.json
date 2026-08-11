@@ -1,21 +1,21 @@
 ﻿{
-  "python.defaultInterpreterPath": "C:\\PyEnvs\\mwspace\\Scripts\\python.exe",
+  "python.defaultInterpreterPath": "${env:MWSPACE_VENV}\\Scripts\\python.exe",
   "python.terminal.useEnvFile": true,
   "jupyter.jupyterServerType": "local",
   "jupyter.kernels.trusted": [
-    "C:\\Users\\chinm\\AppData\\Roaming\\jupyter\\kernels\\mwspace\\kernel.json"
+    "${env:USERPROFILE}\\AppData\\Roaming\\jupyter\\kernels\\mwspace\\kernel.json"
   ],
   "python.terminal.activateEnvironment": true,
   "terminal.integrated.env.windows": {
-    "VIRTUAL_ENV": "C:\\PyEnvs\\mwspace",
-    "PATH": "C:\\PyEnvs\\mwspace\\Scripts;${env:PATH}"
+    "VIRTUAL_ENV": "${env:MWSPACE_VENV}",
+    "PATH": "${env:MWSPACE_VENV}\\Scripts;${env:PATH}"
   },
   "terminal.integrated.profiles.windows": {
     "Command Prompt (mwspace)": {
       "path": "C:\\Windows\\System32\\cmd.exe",
       "args": [
         "/K",
-        "C:\\PyEnvs\\mwspace\\Scripts\\activate.bat"
+        "${env:MWSPACE_VENV}\\Scripts\\activate.bat"
       ]
     },
     "PowerShell": {
@@ -25,7 +25,7 @@
         "-ExecutionPolicy",
         "Bypass",
         "-Command",
-        "& 'C:\\PyEnvs\\mwspace\\Scripts\\Activate.ps1'"
+        "& '${env:MWSPACE_VENV}\\Scripts\\Activate.ps1'"
       ]
     },
     "PowerShell (mwspace)": {
@@ -35,7 +35,7 @@
         "-ExecutionPolicy",
         "Bypass",
         "-File",
-        "C:\\PyEnvs\\mwspace\\Scripts\\Activate.ps1"
+        "${env:MWSPACE_VENV}\\Scripts\\Activate.ps1"
       ]
     }
   },
