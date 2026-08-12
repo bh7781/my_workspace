@@ -1,6 +1,12 @@
 {
   "permissions": {
-    "allow": ["mcp__playwright"],
+    "allow": [
+      "mcp__playwright",
+      "Read(//d/PyEnvs/mwspace/Scripts/**)",
+      "Read(//c/PyEnvs/mwspace/Scripts/**)",
+      "Bash(/d/PyEnvs/mwspace/Scripts/python.exe *)",
+      "Bash(python3 *)"
+    ],
     "deny": []
   }
 }
