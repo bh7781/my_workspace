@@ -1,11 +1,14 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS account ID from an ARN string. The function should take an ARN like 'arn:aws:s3:::my-bucket' or 'arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0' and return the account ID if present, or None if not applicable."
+    "task": "Parse an AWS S3 bucket name from an S3 URI in the format 's3://bucket-name/key/path' and extract just the bucket name",
+    "format": "regex"
   },
   {
-    "task": "Create a JSON object that represents an AWS Lambda function configuration with the following properties: function name 'ProcessData', runtime 'python3.11', role ARN 'arn:aws:iam::123456789012:role/lambda-role', timeout of 60 seconds, memory of 256 MB, and environment variables for AWS_REGION and LOG_LEVEL."
+    "task": "Create a JSON CloudFormation template for an AWS Lambda function that prints 'Hello World' with basic execution role",
+    "format": "json"
   },
   {
-    "task": "Write a regular expression that matches valid AWS S3 bucket names. The pattern should enforce S3 naming rules: 3-63 characters long, lowercase letters, numbers, hyphens and dots allowed, must start and end with alphanumeric characters, and cannot be formatted as an IP address."
+    "task": "Write a Python function that takes an AWS IAM ARN string and returns the service and resource type components",
+    "format": "python"
   }
 ]
