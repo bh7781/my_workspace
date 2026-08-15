@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from an S3 URI in the format 's3://bucket-name/key/path' and extract just the bucket name",
-    "format": "regex"
+    "task": "Parse an AWS CloudFormation template and extract all EC2 instance logical IDs and their instance types",
+    "format": "python",
+    "solution_criteria": "Function should parse JSON CloudFormation template, iterate through Resources, filter for AWS::EC2::Instance type, and return a dictionary mapping logical IDs to instance types"
   },
   {
-    "task": "Create a JSON CloudFormation template for an AWS Lambda function that prints 'Hello World' with basic execution role",
-    "format": "json"
+    "task": "Create a JSON policy document that allows an IAM user to read and list objects in a specific S3 bucket named 'company-data'",
+    "format": "json",
+    "solution_criteria": "Valid IAM policy JSON with correct structure, Principal/Effect/Action/Resource fields, s3:GetObject and s3:ListBucket permissions scoped to the 'company-data' bucket ARN"
   },
   {
-    "task": "Write a Python function that takes an AWS IAM ARN string and returns the service and resource type components",
-    "format": "python"
+    "task": "Write a regular expression to validate and extract AWS Lambda function names from CloudWatch logs (format: /aws/lambda/function-name)",
+    "format": "regex",
+    "solution_criteria": "Regex should match the path pattern /aws/lambda/ followed by valid function names (alphanumeric, hyphens, underscores), and capture the function name without the prefix"
   }
 ]
