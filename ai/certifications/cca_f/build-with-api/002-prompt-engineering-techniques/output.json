@@ -1,0 +1,22 @@
+[
+  {
+    "output": "# One-Day Meal Plan for High-Performance Athlete\n\nHere is a one-day meal plan for an athlete aiming to maximize performance and recovery for morning strength training and evening basketball:\n\n* **Calorie Target:** Approximately 3,500 calories\n* **Macronutrient Breakdown:** Protein (210g), Fat (115g), Carbs (420g)\n\n## Meal Plan:\n\n* **Breakfast (6:30 AM) - Pre-Strength Training:** \n  * Pancakes (100g dry flour) with honey (40g), 3 whole eggs (150g), turkey sausage (100g), and orange juice (250ml)\n  * Protein: 35g, Fat: 18g, Carbs: 75g\n\n* **Mid-Morning Snack (9:30 AM) - Post-Strength Training:**\n  * Chocolate protein shake with banana (120g), whole milk (240ml), peanut butter (30g), and whey protein powder (30g)\n  * Protein: 40g, Fat: 15g, Carbs: 55g\n\n* **Lunch (12:30 PM):**\n  * Grilled lean beef (180g), brown rice (150g cooked), steamed carrots (100g), and olive oil drizzle (15ml)\n  * Protein: 50g, Fat: 18g, Carbs: 65g\n\n* **Afternoon Snack (3:30 PM) - Pre-Basketball Game:**\n  * Greek yogurt (200g, full-fat), granola (50g), and mixed berries (80g)\n  * Protein: 25g, Fat: 12g, Carbs: 55g\n\n* **Pre-Game Snack (5:30 PM - 2 hours before game):**\n  * White bagel (85g) with honey (20g) and sliced turkey (60g)\n  * Protein: 20g, Fat: 5g, Carbs: 60g\n\n* **Dinner (8:30 PM - Post-Basketball Game):**\n  * Grilled salmon (160g), sweet potato (200g), asparagus (150g), and butter (10g)\n  * Protein: 35g, Fat: 20g, Carbs: 50g\n\n* **Evening Snack (10:30 PM):**\n  * Cottage cheese (150g, full-fat) with almonds (25g)\n  * Protein: 30g, Fat: 12g, Carbs: 10g\n\nThis meal plan strategically times carbohydrates around training and competition, prioritizes high-quality protein for muscle recovery, and includes healthy fats to support hormonal function and sustained energy for elite athletic performance.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "198 cm",
+        "weight": "95 kg",
+        "goal": "Maximize performance and recovery for morning strength training session and evening basketball game",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan covers full day with appropriate timing around morning training and evening game",
+        "Includes adequate carbohydrates and protein strategically positioned before and after workouts",
+        "Compact format suitable for a single athlete (no excessive detail or redundancy)"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a collegiate basketball player who has a morning strength training session and evening game, requiring specific timing of carbohydrate and protein intake around performance windows"
+    },
+    "score": 7,
+    "reasoning": "The solution meets all three mandatory requirements with daily caloric total, macronutrient breakdown, and detailed meals with portions and timing clearly presented. The meal plan demonstrates good strategic thinking around workout timing and is appropriately compact. However, there are internal mathematical inconsistencies in the macronutrient calculations that undermine accuracy, and the absence of hydration guidance is a notable gap for athletic performance. Despite these secondary deficiencies, the solution fulfills the core requirements and provides a functional, well-structured meal plan."
+  }
+]

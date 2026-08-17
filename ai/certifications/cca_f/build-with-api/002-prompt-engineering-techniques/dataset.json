@@ -1,0 +1,17 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "198 cm",
+      "weight": "95 kg",
+      "goal": "Maximize performance and recovery for morning strength training session and evening basketball game",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers full day with appropriate timing around morning training and evening game",
+      "Includes adequate carbohydrates and protein strategically positioned before and after workouts",
+      "Compact format suitable for a single athlete (no excessive detail or redundancy)"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a collegiate basketball player who has a morning strength training session and evening game, requiring specific timing of carbohydrate and protein intake around performance windows"
+  }
+]
