@@ -1,17 +1,50 @@
 [
   {
     "prompt_inputs": {
-      "height": "198 cm",
-      "weight": "95 kg",
-      "goal": "Maximize performance and recovery for morning strength training session and evening basketball game",
-      "restrictions": "None"
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon preparation with carbohydrate loading for endurance performance",
+      "restrictions": "No dairy, vegetarian"
     },
     "solution_criteria": [
-      "Meal plan covers full day with appropriate timing around morning training and evening game",
-      "Includes adequate carbohydrates and protein strategically positioned before and after workouts",
-      "Compact format suitable for a single athlete (no excessive detail or redundancy)"
+      "Meal plan totals 3,000-3,500 calories appropriate for marathon training",
+      "Carbohydrates comprise 60-65% of total calories for endurance fuel",
+      "All meals and snacks are vegetarian and dairy-free",
+      "Plan is compact and covers breakfast, lunch, dinner, and 1-2 snacks"
     ],
     "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a collegiate basketball player who has a morning strength training session and evening game, requiring specific timing of carbohydrate and protein intake around performance windows"
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high caloric intake and carbohydrate loading with specific macronutrient ratios"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "85 kg",
+      "goal": "Build muscle and maximize strength for weightlifting competition in 8 weeks",
+      "restrictions": "Lactose intolerant"
+    },
+    "solution_criteria": [
+      "Meal plan covers one full day with breakfast, lunch, dinner, and at least one snack",
+      "Includes strategic pre-workout and post-workout meals with adequate protein and carbohydrates",
+      "All meals are lactose-free and suitable for the athlete's restriction",
+      "Protein-focused with appropriate macronutrient distribution for strength training"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing protein-focused meals with strategic pre/post-workout nutrition timing"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "82 kg",
+      "goal": "Maintain 80 kg weight class for wrestling competition in 3 days while preserving strength and energy",
+      "restrictions": "No dairy due to lactose intolerance"
+    },
+    "solution_criteria": [
+      "Meal plan totals approximately 2,200-2,400 calories to achieve gradual weight loss while maintaining performance",
+      "All meals are dairy-free and suitable for lactose intolerance",
+      "Plan is compact and covers one full day (breakfast, lunch, dinner, and one snack)",
+      "Meals emphasize lean protein and complex carbohydrates to support wrestling training and weight management"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport requiring weight management (wrestler or boxer) with calorie-controlled meals that maintain energy while meeting competitive weight class requirements"
   }
 ]
